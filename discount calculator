@@ -1,0 +1,12 @@
+amount=float(input("enter total billing amount: "))
+if amount>10000:
+    discount=amount*0.3
+elif amount>5000:
+    discount=amount*0.2
+elif amount>1000:
+    discount=amount*0.1
+else:
+    discount=0
+final_amount=amount-discount
+print(f"total discount on you billing amount is: {discount}")
+print(f"amount payable after discount: {final_amount}")
